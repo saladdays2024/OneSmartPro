@@ -50,11 +50,11 @@ SelectLR: &SelectLR {type: select, proxies: [低倍率线路, 高质量线路, �
 # ==================== 代理提供者 ====================
 proxy-providers:
   # 优质订阅源 - 优质节点集合，使用时请修改
-  优质服务商: {<<: *BaseProvider, url: '优质订阅源地址', override: {additional-prefix: '[优] '}}
+  优质服务商: {<<: *BaseProvider, url: 'https://hongxingdl.love/hxyunvip?token=7335569b57339b880fe59bcbfae5e9ea', override: {additional-prefix: '[优] '}}
   # 备用订阅源 - 次优节点集合，使用时请修改
-  备用服务商: {<<: *BaseProvider, url: '备用订阅源地址', override: {additional-prefix: '[备] '}}
+  备用服务商: {<<: *BaseProvider, url: 'https://shayu.me/api/v1/client/subscribe?token=62e3935e7b0f27b3e56c3329eae52386', override: {additional-prefix: '[备] '}}
   # 落地订阅源 - 落地服务连接，使用时请修改
-  落地服务商: {<<: *BaseProvider, url: '落地订阅源地址', override: {additional-prefix: '[中] ', dialer-proxy: 中转服务}}
+  落地服务商: {<<: *BaseProvider, url: 'http://192.168.5.100:3001/CKg2abstVnOeRpm1aB4G/download/My', override: {additional-prefix: '[中] ', dialer-proxy: 中转服务}}
 
 # ==================== 监听器 ====================
 listeners:
