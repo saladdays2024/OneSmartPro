@@ -30,7 +30,7 @@ BaseSmart: &BaseSmart {type: smart, interval: 200, lazy: true, url: 'https://www
 # 节点筛选正则表达式 - 基于地理位置和关键词过滤
 FilterHK: &FilterHK '^(?=.*(?i)(港|🇭🇰|HK|Hong|HKG))(?!.*(排除1|排除2|5x)).*$'
 FilterSG: &FilterSG '^(?=.*(?i)(坡|🇸🇬|SG|Sing|SIN|XSP))(?!.*(排除1|排除2|5x)).*$'
-FilterJP: &FilterJP '^(?=.*(?i)(日|🇯🇵|JP|Japan|NRT|HND|KIX|CTS|FUK))(?!.*(排除1|排除2|5x)).*$'
+FilterJP: &FilterJP '^(?=.*(?i)(日|🇯🇵|JP|Japan|NRT|HND|KIX|CTS|FUK))(?!.*(排除1|排除2|5x|尼日)).*$'
 FilterKR: &FilterKR '^(?=.*(?i)(韩|🇰🇷|韓|首尔|南朝鲜|KR|KOR|Korea|South))(?!.*(排除1|排除2|5x)).*$'
 FilterUS: &FilterUS '^(?=.*(?i)(美|🇺🇸|US|USA|JFK|LAX|ORD|ATL|DFW|SFO|MIA|SEA|IAD))(?!.*(排除1|排除2|5x)).*$'
 FilterTW: &FilterTW '^(?=.*(?i)(台|🇼🇸|🇹🇼|TW|tai|TPE|TSA|KHH))(?!.*(排除1|排除2|5x)).*$'
@@ -61,8 +61,8 @@ listeners:
   # Shadowsocks监听器 - 代理节点 玩法：远程连接家庭网络，端口和密码，使用时请修改
   - {name: SS-IN,  type: shadowsocks, listen: '::', port: 10000, udp: true, password: Xf3#Lp9WqZ, cipher: aes-256-gcm}
   # Mixed监听器 - 分地区专用端口 玩法：本地浏览器插件或手机APP配置代理，实现分地区访问
-  - {name: MIXED-SG, type: mixed, port: 50000, proxy: 美国智能}
-  - {name: MIXED-US, type: mixed, port: 50001, proxy: 狮城智能}
+  - {name: MIXED-US, type: mixed, port: 50000, proxy: 美国智能}
+  - {name: MIXED-SG, type: mixed, port: 50001, proxy: 狮城智能}
   - {name: MIXED-TW, type: mixed, port: 50002, proxy: 台湾智能}
   - {name: MIXED-HK, type: mixed, port: 50003, proxy: 香港智能}
   - {name: MIXED-JP, type: mixed, port: 50004, proxy: 日本智能}
