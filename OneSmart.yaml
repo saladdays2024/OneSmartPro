@@ -157,6 +157,8 @@ rules:
   - RULE-SET,China,国内流量
   - RULE-SET,Games,游戏平台
   - RULE-SET,Emby,Emby服
+  - DOMAIN-KEYWORD,speedtest,网络测试
+  - RULE-SET,Speedtest,网络测试
   
   # IP规则
   - RULE-SET,PrivateIP,直接连接,no-resolve
@@ -168,7 +170,7 @@ rules:
   - RULE-SET,StreamingIP,国际媒体,no-resolve
   - RULE-SET,ProxyIP,国外流量,no-resolve
   - RULE-SET,ChinaIP,国内流量,no-resolve
-
+  - RULE-SET,CloudflareIP,直接连接,no-resolve
   # 兜底规则
   - MATCH,兜底流量
 
@@ -191,7 +193,8 @@ rule-providers:
   Proxy:          {<<: *BehaviorDN, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/domain/Proxy.mrs}
   China:          {<<: *BehaviorDN, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/domain/China.mrs}
   Games:          {<<: *BehaviorDN, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/domain/Games.mrs}
-
+  Speedtest:      {<<: *BehaviorDN, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/domain/Speedtest.mrs}
+  Cloudflare:     {<<: *BehaviorDN, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/domain/Cloudflare.mrs}  
   # IP规则
   PrivateIP:      {<<: *BehaviorIP, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/ip/Private.mrs}
   AIIP:           {<<: *BehaviorIP, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/ip/AI.mrs}
@@ -202,4 +205,5 @@ rule-providers:
   StreamingIP:    {<<: *BehaviorIP, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/ip/Streaming.mrs}  
   ProxyIP:        {<<: *BehaviorIP, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/ip/Proxy.mrs} 
   ChinaIP:        {<<: *BehaviorIP, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/ip/China.mrs}
+  CloudflareIP:   {<<: *BehaviorIP, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/ip/Cloudflare.mrs}
 # ==================== EOF ====================
