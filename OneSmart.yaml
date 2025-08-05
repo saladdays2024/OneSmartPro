@@ -151,15 +151,17 @@ rules:
   - RULE-SET,Private,直接连接
   - RULE-SET,XPTV,直接连接
   - RULE-SET,AI,人工智能
+  - DOMAIN-KEYWORD,speedtest,网络测试
+  - RULE-SET,Speedtest,网络测试
   - RULE-SET,Telegram,社交平台
   - RULE-SET,SocialMedia,社交平台
   - RULE-SET,Streaming,国际媒体
-  - RULE-SET,Proxy,国外流量
-  - RULE-SET,China,国内流量
   - RULE-SET,Games,游戏平台
   - RULE-SET,Emby,Emby服
-  - DOMAIN-KEYWORD,speedtest,网络测试
-  - RULE-SET,Speedtest,网络测试
+  - RULE-SET,Proxy,国外流量
+  - RULE-SET,China,国内流量
+
+
   
   # IP规则
   - RULE-SET,PrivateIP,直接连接,no-resolve
