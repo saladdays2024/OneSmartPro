@@ -24,7 +24,7 @@ SelectDC: &SelectDC {type: select, proxies: [直接连接, 香港智能, 台湾�
 # ==================== 代理提供者 ====================
 proxy-providers:
   # 优质订阅源 - 优质节点集合，使用时请修改
-  优质服务商: {<<: *BaseProvider, url: 'https://yo11.vip/s/e96730daf5b8be3ef41df529a2942eff', override: {additional-prefix: '[优] '}}
+  优质服务商: {<<: *BaseProvider, url: 'https://www.freebb.me/api/v1/client/subscribe?token=d990e9767ebf65fa036534922239c764', override: {additional-prefix: '[优] '}}
   # 备用订阅源 - 次优节点集合，使用时请修改
   备用服务商: {<<: *BaseProvider, url: 'https://hongxingyun10.vip/hxyunvip?token=a6538d2d183a040ffd2c0800c99e107a', override: {additional-prefix: '[备] '}}
   # 自建订阅源 - 次优节点集合，使用时请修改
