@@ -146,6 +146,7 @@ rules:
   # 常用必备
   - DOMAIN-SUFFIX,cn2gias.uk,Emby服
   - DOMAIN-SUFFIX,hongxingyunmovie.vip,Emby服
+  - DOMAIN,1panel.hunao.xyz,直接连接
   # 域名规则
   - RULE-SET,ConnCheck,直接连接
   - RULE-SET,Private,直接连接
