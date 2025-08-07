@@ -24,7 +24,7 @@ SelectDC: &SelectDC {type: select, proxies: [直接连接, 香港智能, 台湾�
 # ==================== 代理提供者 ====================
 proxy-providers:
   # 优质订阅源 - 优质节点集合，使用时请修改
-  优质服务商: {<<: *BaseProvider, url: 'https://shayu.me/api/v1/client/subscribe?token=adb77cc8f008add1bdc67b1b7b4ebe39', override: {additional-prefix: '[优] '}}
+  优质服务商: {<<: *BaseProvider, url: 'http://192.168.5.100:3001/CKg2abstVnOeRpm1aB4G/download/%E5%A5%B6%E6%98%94', override: {additional-prefix: '[优] '}}
   # 备用订阅源 - 次优节点集合，使用时请修改
   备用服务商: {<<: *BaseProvider, url: 'https://hongxingyun10.vip/hxyunvip?token=a6538d2d183a040ffd2c0800c99e107a', override: {additional-prefix: '[备] '}}
   # 自建订阅源 - 次优节点集合，使用时请修改
