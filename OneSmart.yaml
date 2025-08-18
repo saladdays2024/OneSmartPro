@@ -24,9 +24,9 @@ SelectDC: &SelectDC {type: select, proxies: [直接连接, 一键智能, 香港�
 # ==================== 代理提供者 ====================
 proxy-providers:
   # 优质订阅源 - 优质节点集合，使用时请修改
-  优质服务商: {<<: *BaseProvider, url: 'http://192.168.5.100:3001/CKg2abstVnOeRpm1aB4G/download/SSRGog%EF%BC%88%E7%99%BD%E5%AB%96%EF%BC%89', override: {additional-prefix: '[优] '}}
+  优质服务商: {<<: *BaseProvider, url: 'http://192.168.5.100:3001/CKg2abstVnOeRpm1aB4G/download/collection/%E4%BC%98%E8%B4%A8%E8%AE%A2%E9%98%85', override: {additional-prefix: '[优] '}}
   # 备用订阅源 - 次优节点集合，使用时请修改
-  备用服务商: {<<: *BaseProvider, url: 'http://192.168.5.100:3001/CKg2abstVnOeRpm1aB4G/download/collection/%E7%99%BD%E5%AB%96%E5%90%88%E9%9B%86', override: {additional-prefix: '[备] '}}
+  备用服务商: {<<: *BaseProvider, url: 'http://192.168.5.100:3001/CKg2abstVnOeRpm1aB4G/download/collection/%E5%A4%87%E7%94%A8%E8%AE%A2%E9%98%85', override: {additional-prefix: '[备] '}}
   # 自建订阅源 - 次优节点集合，使用时请修改
   自建服务商: {<<: *BaseProvider, url: 'http://192.168.5.100:3001/CKg2abstVnOeRpm1aB4G/download/My', override: {additional-prefix: '[自] '}}
 
