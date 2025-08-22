@@ -76,7 +76,7 @@ profile:
 
 # 流量嗅探
 sniffer:
-  enable: false
+  enable: true
   override-destination: false
   force-dns-mapping: true
   parse-pure-ip: true
