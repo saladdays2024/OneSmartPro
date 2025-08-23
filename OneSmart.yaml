@@ -145,6 +145,7 @@ rules:
   # 常用必备
   - DOMAIN-SUFFIX,cn2gias.uk,Emby服
   - DOMAIN-SUFFIX,hongxingyunmovie.vip,Emby服
+  - DOMAIN-SUFFIX,digimon.ink,直接连接
   - DOMAIN,1panel.hunao.xyz,直接连接
   - DOMAIN,docker.amingg.com,直接连接
   - DOMAIN,024888.xyz,直接连接
