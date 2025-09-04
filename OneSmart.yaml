@@ -149,6 +149,7 @@ rules:
   - DOMAIN,1panel.hunao.xyz,直接连接
   - DOMAIN,docker.amingg.com,直接连接
   - DOMAIN,024888.xyz,直接连接
+  - DOMAIN,swsj.hebeirongshi.com,直接连接
   # 域名规则
   - RULE-SET,ConnCheck,直接连接
   - RULE-SET,Private,直接连接
