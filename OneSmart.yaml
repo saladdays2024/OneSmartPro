@@ -124,6 +124,7 @@ proxy-groups:
   - {name: 游戏平台,  <<: *OneSmart, icon: https://git.imee.me/https://github.com/Koolson/Qure/raw/master/IconSet/Color/Game.png}
   - {name: Emby服,   <<: *OneSmart, icon: https://git.imee.me/https://github.com/Koolson/Qure/raw/master/IconSet/Color/Emby.png}
   - {name: 国际媒体,  <<: *OneSmart, icon: https://git.imee.me/https://github.com/Koolson/Qure/raw/master/IconSet/Color/DomesticMedia.png}
+  - {name: 谷歌服务,  <<: *SelectHQ, icon: https://git.imee.me/https://github.com/Koolson/Qure/raw/master/IconSet/Color/Google_Search.png}
   - {name: 国外流量,  <<: *OneSmart, icon: https://git.imee.me/https://github.com/Koolson/Qure/raw/master/IconSet/Color/Global.png}
   - {name: 国内流量,  <<: *SelectDC, icon: https://git.imee.me/https://github.com/Koolson/Qure/raw/master/IconSet/Color/China.png}
   - {name: 兜底流量,  <<: *OneSmart, icon: https://git.imee.me/https://github.com/Koolson/Qure/raw/master/IconSet/Color/Final.png}
@@ -164,6 +165,7 @@ rules:
   - RULE-SET,Streaming,国际媒体
   - RULE-SET,Games,游戏平台
   - RULE-SET,Emby,Emby服
+  - RULE-SET,Google,谷歌服务
   - RULE-SET,Proxy,国外流量
   - RULE-SET,China,国内流量
 
@@ -177,6 +179,7 @@ rules:
   - RULE-SET,SocialMediaIP,社交平台,no-resolve
   - RULE-SET,EmbyIP,Emby服,no-resolve
   - RULE-SET,StreamingIP,国际媒体,no-resolve
+  - RULE-SET,GoogleIP,谷歌服务,no-resolve
   - RULE-SET,ProxyIP,国外流量,no-resolve
   - RULE-SET,ChinaIP,国内流量,no-resolve
   # 兜底规则
@@ -198,10 +201,11 @@ rule-providers:
   XPTV:           {<<: *BehaviorDN, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/domain/XPTV.mrs}  
   Emby:           {<<: *BehaviorDN, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/domain/Emby.mrs}
   Streaming:      {<<: *BehaviorDN, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/domain/Streaming.mrs}  
-  Proxy:          {<<: *BehaviorDN, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/domain/Proxy.mrs}
-  China:          {<<: *BehaviorDN, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/domain/China.mrs}
   Games:          {<<: *BehaviorDN, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/domain/Games.mrs}
   Speedtest:      {<<: *BehaviorDN, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/domain/Speedtest.mrs}
+  Google:         {<<: *BehaviorDN, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/domain/Google.mrs}
+  Proxy:          {<<: *BehaviorDN, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/domain/Proxy.mrs}
+  China:          {<<: *BehaviorDN, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/domain/China.mrs}
   # IP规则
   PrivateIP:      {<<: *BehaviorIP, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/ip/Private.mrs}
   AIIP:           {<<: *BehaviorIP, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/ip/AI.mrs}
@@ -210,6 +214,8 @@ rule-providers:
   XPTVIP:         {<<: *BehaviorIP, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/ip/XPTV.mrs}
   EmbyIP:         {<<: *BehaviorIP, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/ip/Emby.mrs}
   StreamingIP:    {<<: *BehaviorIP, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/ip/Streaming.mrs}  
+  GoogleIP:       {<<: *BehaviorIP, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/ip/Google.mrs}
   ProxyIP:        {<<: *BehaviorIP, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/ip/Proxy.mrs} 
   ChinaIP:        {<<: *BehaviorIP, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/ip/China.mrs}
+
 # ==================== EOF ====================
