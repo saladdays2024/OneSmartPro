@@ -152,7 +152,7 @@ proxy-groups:
 # ==================== 规则路由 ====================
 rules: 
   # 常用必备
-  - DOMAIN-SUFFIX,cn2gias.uk,Emby服
+  - DOMAIN-SUFFIX,cn2gias.uk,手动选择
   - DOMAIN-SUFFIX,emby3.69yun69.com,Emby服
   - DOMAIN-SUFFIX,x.ddnsto.com,直接连接
   - DOMAIN-SUFFIX,digimon.ink,直接连接
