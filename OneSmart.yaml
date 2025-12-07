@@ -151,6 +151,9 @@ proxy-groups:
   
 # ==================== 规则路由 ====================
 rules: 
+  # 拦截规则
+  - AND,((DST-PORT,443),(NETWORK,UDP)),REJECT  # 阻止 QUIC
+  
   # 常用必备
   - DOMAIN-SUFFIX,cn2gias.uk,手动选择
   - DOMAIN-SUFFIX,emby3.69yun69.com,Emby服
@@ -161,8 +164,10 @@ rules:
   - DOMAIN,024888.xyz,直接连接
   - DOMAIN,swsj.hebeirongshi.com,直接连接
   - DOMAIN,mlyouxi.com,直接连接
+  
   # 域名规则
   - RULE-SET,Private,直接连接
+  - RULE-SET,Direct,直接连接
   - RULE-SET,XPTV,直接连接
   - RULE-SET,AI,人工智能
   - DOMAIN-KEYWORD,speedtest,网络测试
@@ -176,8 +181,6 @@ rules:
   - RULE-SET,Proxy,国外流量
   - RULE-SET,China,国内流量
 
-
-  
   # IP规则
   - RULE-SET,PrivateIP,直接连接,no-resolve
   - RULE-SET,XPTVIP,直接连接,no-resolve
