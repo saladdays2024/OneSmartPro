@@ -162,7 +162,7 @@ rules:
   - DOMAIN-SUFFIX,shrekmedia.org,直接连接
   - DOMAIN-SUFFIX,hohai.eu.org,直接连接
   - DOMAIN-SUFFIX,bangumi.ca,直接连接
-  - DOMAIN-SUFFIX,istyboe.top,直接连接
+  - DOMAIN-SUFFIX,istyboe.top,Emby服
   - DOMAIN-SUFFIX,okemby.org,直接连接
   
   # 常用必备
@@ -172,7 +172,7 @@ rules:
   - DOMAIN,docker.amingg.com,直接连接
   - DOMAIN,024888.xyz,直接连接
   - DOMAIN,swsj.hebeirongshi.com,直接连接
-  - DOMAIN,mlyouxi.com,直接连接  
+  - DOMAIN,mlyouxi.com,直接连接
   
   # 域名规则
   - RULE-SET,Private,直接连接
