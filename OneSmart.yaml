@@ -156,14 +156,14 @@ rules:
   
   # Emby
   - DOMAIN-SUFFIX,cn2gias.uk,手动选择
-  - DOMAIN-SUFFIX,69yun69.com,直接连接
-  - DOMAIN-SUFFIX,007.us.kg,直接连接
-  - DOMAIN-SUFFIX,kongcheng666.dpdns.org,直接连接
-  - DOMAIN-SUFFIX,shrekmedia.org,直接连接
-  - DOMAIN-SUFFIX,hohai.eu.org,直接连接
-  - DOMAIN-SUFFIX,bangumi.ca,直接连接
+  - DOMAIN-SUFFIX,69yun69.com,Emby服
+  - DOMAIN-SUFFIX,007.us.kg,Emby服
+  - DOMAIN-SUFFIX,kongcheng666.dpdns.org,Emby服
+  - DOMAIN-SUFFIX,shrekmedia.org,Emby服
+  - DOMAIN-SUFFIX,hohai.eu.org,Emby服
+  - DOMAIN-SUFFIX,bangumi.ca,Emby服
   - DOMAIN-SUFFIX,istyboe.top,Emby服
-  - DOMAIN-SUFFIX,okemby.org,直接连接
+  - DOMAIN-SUFFIX,okemby.org,Emby服
   
   # 常用必备
   - DOMAIN-SUFFIX,x.ddnsto.com,直接连接
