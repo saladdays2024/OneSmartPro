@@ -189,7 +189,7 @@ rules:
   - DOMAIN-SUFFIX,younoyes.com,Emby服
   # 享境
   - DOMAIN-SUFFIX,luxrealm.online,Emby服
-  # ONG
+  # BCXC
   - DOMAIN-SUFFIX,l0323.top,Emby服
  
   # 常用必备
