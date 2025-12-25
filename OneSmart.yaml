@@ -195,9 +195,8 @@ rules:
   # 常用必备
   - DOMAIN-SUFFIX,x.ddnsto.com,直接连接
   - DOMAIN-SUFFIX,digimon.ink,直接连接
-  - DOMAIN,1panel.hunao.xyz,直接连接
   - DOMAIN,docker.amingg.com,直接连接
-  - DOMAIN,024888.xyz,直接连接
+  - DOMAIN-SUFFIX,024888.xyz,直接连接
   - DOMAIN,swsj.hebeirongshi.com,直接连接
   - DOMAIN,mlyouxi.com,直接连接
   
