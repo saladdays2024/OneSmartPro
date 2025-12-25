@@ -155,23 +155,43 @@ rules:
   - AND,((DST-PORT,443),(NETWORK,UDP)),REJECT  # 阻止 QUIC
   
   # Emby
+  # SNTP
   - DOMAIN-SUFFIX,cn2gias.uk,Emby服
+  # 琉璃门
   - DOMAIN-SUFFIX,kongcheng666.dpdns.org,Emby服
+  # nayovO
   - DOMAIN-SUFFIX,007.us.kg,Emby服
+  # Shrek
   - DOMAIN-SUFFIX,shrekmedia.org,Emby服
+  # Hohai
   - DOMAIN-SUFFIX,hohai.eu.org,Emby服
+  # nyamedia
   - DOMAIN-SUFFIX,bangumi.ca,Emby服
+  # 非越
   - DOMAIN-SUFFIX,sfcj.org,Emby服
+  # 404 Not Found
   - DOMAIN-SUFFIX,notfounda.shop,Emby服
+  # OkEmby
   - DOMAIN-SUFFIX,okemby.org,Emby服
+  # 临小境
   - DOMAIN-SUFFIX,liminalnet.com,Emby服
+  # 泥嚎
   - DOMAIN-SUFFIX,istyboe.top,Emby服
+  # 肥牛
   - DOMAIN-SUFFIX,feiniu.lol,Emby服
+  # 69
   - DOMAIN-SUFFIX,69yun69.com,Emby服
+  # HuaLu
   - DOMAIN-SUFFIX,zhyu.de,Emby服
+  # 云海
   - DOMAIN-SUFFIX,oceancloud.asia,Emby服
+  # YounoPlus
   - DOMAIN-SUFFIX,younoyes.com,Emby服
-
+  # 享境
+  - DOMAIN-SUFFIX,luxrealm.online,Emby服
+  # ONG
+  - DOMAIN-SUFFIX,l0323.top,Emby服
+ 
   # 常用必备
   - DOMAIN-SUFFIX,x.ddnsto.com,直接连接
   - DOMAIN-SUFFIX,digimon.ink,直接连接
