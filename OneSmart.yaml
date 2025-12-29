@@ -191,6 +191,8 @@ rules:
   - DOMAIN-SUFFIX,luxrealm.online,Emby服
   # BCXC
   - DOMAIN-SUFFIX,l0323.top,Emby服
+  # Cookie
+  - DOMAIN,info.us.kg,Emby服
  
   # 常用必备
   - DOMAIN-SUFFIX,x.ddnsto.com,直接连接
