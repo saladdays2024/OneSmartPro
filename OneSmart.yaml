@@ -193,7 +193,9 @@ rules:
   - DOMAIN-SUFFIX,l0323.top,Emby服
   # Cookie
   - DOMAIN,info.us.kg,Emby服
- 
+  # Lily
+  - DOMAIN-SUFFIX,lilyemby.my,直接连接
+  
   # 常用必备
   - DOMAIN-SUFFIX,x.ddnsto.com,直接连接
   - DOMAIN-SUFFIX,digimon.ink,直接连接
