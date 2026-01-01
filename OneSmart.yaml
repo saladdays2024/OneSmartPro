@@ -196,7 +196,9 @@ rules:
   # Lily
   - DOMAIN-SUFFIX,lilyemby.my,直接连接
   # 小姨子
-  - DOMAIN,emby.yun,直接连接
+  - DOMAIN-SUFFIX,emby.yun,直接连接
+  # 叶子
+  - DOMAIN-SUFFIX,yezi.my,Emby服
   
   # 常用必备
   - DOMAIN-SUFFIX,x.ddnsto.com,直接连接
