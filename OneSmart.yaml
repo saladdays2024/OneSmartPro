@@ -168,7 +168,7 @@ rules:
   # nyamedia
   - DOMAIN-SUFFIX,bangumi.ca,Emby服
   # 非越
-  - DOMAIN-SUFFIX,sfcj.org,Emby服
+  - DOMAIN-SUFFIX,sfcj.org,直接连接
   # 404 Not Found
   - DOMAIN-SUFFIX,notfounda.shop,Emby服
   # OkEmby
