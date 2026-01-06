@@ -199,6 +199,11 @@ rules:
   - DOMAIN-SUFFIX,emby.yun,直接连接
   # 叶子
   - DOMAIN-SUFFIX,yezi.my,Emby服
+  # Emos
+  - DOMAIN-SUFFIX,emos.lol,Emby服
+  # ETFLIX
+  - DOMAIN-SUFFIX,embyty.entertang.work,直接连接
+  
   
   # 常用必备
   - DOMAIN-SUFFIX,x.ddnsto.com,直接连接
