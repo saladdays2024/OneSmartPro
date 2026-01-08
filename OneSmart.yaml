@@ -202,9 +202,17 @@ rules:
   # Emos
   - DOMAIN-SUFFIX,emos.lol,Emby服
   # ETFLIX
-  - DOMAIN-SUFFIX,embyty.entertang.work,直接连接
-  
-  
+  - DOMAIN-SUFFIX,entertang.work,直接连接
+  # 云幕
+  - DOMAIN-SUFFIX,nubebelle.cn,Emby服
+  # 二刺螈
+  - DOMAIN-SUFFIX,nijigem.by,直接连接
+  # 狗剩
+  - DOMAIN-SUFFIX,mm880.xyz,Emby服
+  # 105°
+  - DOMAIN,ciallo.party,Emby服
+
+
   # 常用必备
   - DOMAIN-SUFFIX,x.ddnsto.com,直接连接
   - DOMAIN-SUFFIX,digimon.ink,直接连接
