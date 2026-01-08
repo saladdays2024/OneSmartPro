@@ -211,6 +211,11 @@ rules:
   - DOMAIN-SUFFIX,mm880.xyz,Emby服
   # 105°
   - DOMAIN,ciallo.party,Emby服
+  # 鲨鱼
+  - DOMAIN-SUFFIX,525778.xyz,直接连接
+  # 吹大牛
+  - DOMAIN-SUFFIX,oboob.cn,直接连接
+  
 
 
   # 常用必备
