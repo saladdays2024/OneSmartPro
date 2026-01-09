@@ -194,7 +194,7 @@ rules:
   # Cookie
   - DOMAIN,info.us.kg,Emby服
   # Lily
-  - DOMAIN-SUFFIX,lilyemby.my,直接连接
+  - DOMAIN-SUFFIX,lilyemby.com,直接连接
   # 小姨子
   - DOMAIN-SUFFIX,emby.yun,直接连接
   # 叶子
