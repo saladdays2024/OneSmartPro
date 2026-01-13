@@ -192,7 +192,7 @@ rules:
   # BCXC
   - DOMAIN-SUFFIX,l0323.top,Emby服
   # Cookie
-  - DOMAIN,info.us.kg,Emby服
+  - DOMAIN-SUFFIX,nas.edu.kg,直接连接
   # Lily
   - DOMAIN-SUFFIX,lilyemby.com,直接连接
   # 小姨子
@@ -215,7 +215,12 @@ rules:
   - DOMAIN-SUFFIX,525778.xyz,直接连接
   # 吹大牛
   - DOMAIN-SUFFIX,oboob.cn,直接连接
-  
+  # 周三晚
+  - DOMAIN-SUFFIX,zhousanwan.xyz,Emby服
+  # 佬友记
+  - DOMAIN-SUFFIX,605305.xyz,Emby服
+  # HG EMBY
+  - DOMAIN-SUFFIX,dnscf.dpdns.org,直接连接
 
 
   # 常用必备
