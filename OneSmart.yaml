@@ -252,6 +252,7 @@ rules:
   - RULE-SET,China,国内流量
 
   # IP规则
+  - IP-CIDR,5.28.195.2/32,国外流量,no-resolve
   - RULE-SET,PrivateIP,直接连接,no-resolve
   - RULE-SET,XPTVIP,直接连接,no-resolve
   - RULE-SET,AIIP,人工智能,no-resolve
