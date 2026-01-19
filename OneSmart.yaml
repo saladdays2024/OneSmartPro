@@ -156,7 +156,7 @@ rules:
   
   # Emby
   # SNTP
-  - DOMAIN-SUFFIX,cn2gias.uk,Emby服
+  - DOMAIN-SUFFIX,cn2gias.uk,手动选择
   # 琉璃门
   - DOMAIN-SUFFIX,kongcheng666.dpdns.org,手动选择
   # nayovO
