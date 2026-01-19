@@ -158,7 +158,7 @@ rules:
   # SNTP
   - DOMAIN-SUFFIX,cn2gias.uk,Emby服
   # 琉璃门
-  - DOMAIN-SUFFIX,kongcheng666.dpdns.org,Emby服
+  - DOMAIN-SUFFIX,kongcheng666.dpdns.org,手动选择
   # nayovO
   - DOMAIN-SUFFIX,007.us.kg,Emby服
   # Shrek
