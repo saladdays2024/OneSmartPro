@@ -157,7 +157,7 @@ rules:
   # Emby
   # SNTP
   - DOMAIN-SUFFIX,cn2gias.uk,手动选择
-  # 琉璃门
+  # W佬
   - DOMAIN-SUFFIX,kongcheng666.dpdns.org,手动选择
   # nayovO
   - DOMAIN-SUFFIX,007.us.kg,Emby服
@@ -185,10 +185,6 @@ rules:
   - DOMAIN-SUFFIX,zhyu.de,Emby服
   # 云海
   - DOMAIN-SUFFIX,oceancloud.asia,Emby服
-  # YounoPlus
-  - DOMAIN-SUFFIX,younoyes.com,Emby服
-  # 享境
-  - DOMAIN-SUFFIX,luxrealm.online,Emby服
   # BCXC
   - DOMAIN-SUFFIX,l0323.top,Emby服
   # Cookie
@@ -200,7 +196,8 @@ rules:
   # 叶子
   - DOMAIN-SUFFIX,yezi.my,Emby服
   # Emos
-  - DOMAIN-SUFFIX,emos.best,Emby服
+  - DOMAIN-SUFFIX,emos.best,直接连接
+  - DOMAIN-SUFFIX,tmdb.org,Emby服
   # ETFLIX
   - DOMAIN-SUFFIX,entertang.work,直接连接
   # 云幕
@@ -225,6 +222,8 @@ rules:
   - DOMAIN-SUFFIX,wenjian.de,Emby服
   # 一之濑琴美
   - DOMAIN-SUFFIX,ichinosekotomi.com,Emby服
+  # HKA
+  - DOMAIN-SUFFIX,aliz.work,Emby服
   
 
   # 常用必备
