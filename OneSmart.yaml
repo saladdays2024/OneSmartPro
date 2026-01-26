@@ -155,6 +155,8 @@ rules:
   - AND,((DST-PORT,443),(NETWORK,UDP),(NOT,((GEOIP,CN)))),REJECT  # 阻止海外 QUIC
   
   # Emby
+  # 反代（W佬）
+  - DOMAIN-SUFFIX,hunao.cc.cd,直接连接
   # SNTP
   - DOMAIN-SUFFIX,cn2gias.uk,手动选择
   # W佬
