@@ -263,7 +263,7 @@ rules:
   - RULE-SET,StreamingIP,国际媒体,no-resolve
   - RULE-SET,GoogleIP,谷歌服务,no-resolve
   - RULE-SET,ProxyIP,国外流量,no-resolve
-  - RULE-SET,ChinaIP,国内流量,no-resolve
+  - RULE-SET,ChinaIP,国内流量
   # 兜底规则
   - MATCH,兜底流量
 
