@@ -1,10 +1,10 @@
+# DNS防泄露版本
 # 必读！！！
-# 此版本没有做防泄露处理，如介意请使用另一个名字为configdns的版本
 # 注意规则在满足自己需求情况下，尽量做到精简，不要过度复杂，以免影响性能。
 # 跑裸核用户请自行去掉下方控制面板模块的注释。
 # 机场订阅
 proxy-providers:
-  Airport1:
+  优质订阅:
     url: "http://192.168.5.100:3001/CKg2abstVnOeRpm1aB4G/download/collection/%E4%BC%98%E8%B4%A8%E8%AE%A2%E9%98%85"
     type: http
     interval: 86400
@@ -13,7 +13,7 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
       interval: 300
     proxy: 直连
-  Airport2:
+  普通订阅:
     url: "http://192.168.5.100:3001/CKg2abstVnOeRpm1aB4G/download/collection/%E5%A4%87%E7%94%A8%E8%AE%A2%E9%98%85"
     type: http
     interval: 86400
@@ -22,7 +22,7 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
       interval: 300
     proxy: 直连
-  Airport3:
+  自建订阅:
     url: "http://192.168.5.100:3001/CKg2abstVnOeRpm1aB4G/download/My"
     type: http
     interval: 86400
@@ -96,16 +96,18 @@ dns:
   enhanced-mode: fake-ip
   fake-ip-range: 28.0.0.1/8
   fake-ip-filter-mode: blacklist
-  fake-ip-filter:
-    - "rule-set:fakeipfilter_domain"
   default-nameserver:
     - https://223.5.5.5/dns-query
   proxy-server-nameserver:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
+  direct-nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
   nameserver:
-    - 211.137.32.178
-    - 211.140.197.58
+    - https://8.8.8.8/dns-query#RULES&ecs=223.5.5.0/24
+  fake-ip-filter:
+    - "rule-set:fakeipfilter_domain"
  
 # 出站策略，根据自己情况调整每个策略里分组排序，增删都可以，比如把美国自动放到第一个，比如删除香港故转，注意别漏掉表情逗号等。
 # 如果相应分组没有筛选到对应的国家，请根据自己节点名字调整筛选关键字。
@@ -116,12 +118,11 @@ proxy-groups:
   - {name: 🍀 Google, type: select, proxies: [🔯 香港故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, ♻️ 香港自动, ♻️ 日本自动, ♻️ 狮城自动, ♻️ 美国自动, ♻️ 自动选择, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🌐 全部节点, 直连]}
   - {name: 🤖 ChatGPT, type: select, proxies: [🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, ♻️ 香港自动, ♻️ 日本自动, ♻️ 狮城自动, ♻️ 美国自动, ♻️ 自动选择, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🌐 全部节点, 直连]}
   - {name: 👨🏿‍💻 GitHub, type: select, proxies: [🔯 香港故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, ♻️ 香港自动, ♻️ 日本自动, ♻️ 狮城自动, ♻️ 美国自动, ♻️ 自动选择, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🌐 全部节点, 直连]}
-  - {name: 🐬 OneDrive, type: select, proxies: [🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, ♻️ 香港自动, ♻️ 日本自动, ♻️ 狮城自动, ♻️ 美国自动, ♻️ 自动选择, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🌐 全部节点, 直连]}
   - {name: 🪟 Microsoft, type: select, proxies: [🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, ♻️ 香港自动, ♻️ 日本自动, ♻️ 狮城自动, ♻️ 美国自动, ♻️ 自动选择, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🌐 全部节点, 直连]}
   - {name: 🎵 TikTok, type: select, proxies: [🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, ♻️ 香港自动, ♻️ 日本自动, ♻️ 狮城自动, ♻️ 美国自动, ♻️ 自动选择, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🌐 全部节点, 直连]}
+  - {name: 🎵 EMBY, type: select, proxies: [🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, ♻️ 香港自动, ♻️ 日本自动, ♻️ 狮城自动, ♻️ 美国自动, ♻️ 自动选择, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🌐 全部节点, 直连]}
   - {name: 📲 Telegram, type: select, proxies: [🔯 香港故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, ♻️ 香港自动, ♻️ 日本自动, ♻️ 狮城自动, ♻️ 美国自动, ♻️ 自动选择, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🌐 全部节点, 直连]}
   - {name: 🎥 NETFLIX, type: select, proxies: [🔯 狮城故转, 🔯 香港故转, 🔯 日本故转, 🔯 美国故转, ♻️ 香港自动, ♻️ 日本自动, ♻️ 狮城自动, ♻️ 美国自动, ♻️ 自动选择, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🌐 全部节点, 直连]}
-  - {name: 💶 PayPal, type: select, proxies: [🔯 日本故转, 🔯 香港故转, 🔯 狮城故转, 🔯 美国故转, ♻️ 香港自动, ♻️ 日本自动, ♻️ 狮城自动, ♻️ 美国自动, ♻️ 自动选择, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🌐 全部节点, 直连]}
   - {name: 🐟 漏网之鱼, type: select, proxies: [🚀 默认代理, 🔯 香港故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, ♻️ 香港自动, ♻️ 日本自动, ♻️ 狮城自动, ♻️ 美国自动, ♻️ 自动选择, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🌐 全部节点, 直连]}
   - {name: 🇭🇰 香港节点, type: select, include-all: true, filter: "(?=.*(港|HK|(?i)Hong))^((?!(台|日|韩|新|深|美)).)*$"}
   - {name: 🇯🇵 日本节点, type: select, include-all: true, filter: "(?=.*(日|JP|(?i)Japan))^((?!(港|台|韩|新|美)).)*$"}
@@ -140,6 +141,78 @@ proxy-groups:
 
 # 规则匹配
 rules:
+  # Emby
+  # 反代（W佬）
+  - DOMAIN-SUFFIX,hunao.cc.cd,直连
+  # SNTP
+  - DOMAIN-SUFFIX,cn2gias.uk,🎵 EMBY
+  # W佬
+  - DOMAIN-SUFFIX,kongcheng666.dpdns.org,🎵 EMBY
+  # nayovO
+  - DOMAIN-SUFFIX,007.us.kg,🎵 EMBY
+  # Shrek
+  - DOMAIN-SUFFIX,shrekmedia.org,🎵 EMBY
+  # Hohai
+  - DOMAIN-SUFFIX,hohai.eu.org,🎵 EMBY
+  # nyamedia
+  - DOMAIN-SUFFIX,bangumi.ca,🎵 EMBY
+  # 非越
+  - DOMAIN-SUFFIX,sfcj.org,🎵 EMBY
+  # 404 Not Found
+  - DOMAIN-SUFFIX,notfounda.shop,🎵 EMBY
+  # OkEmby
+  - DOMAIN-SUFFIX,okemby.org,🎵 EMBY
+  # 临小境
+  - DOMAIN-SUFFIX,liminalnet.com,🎵 EMBY
+  # 泥嚎
+  - DOMAIN-SUFFIX,istyboe.top,🎵 EMBY
+  # 肥牛
+  - DOMAIN-SUFFIX,feiniu.lol,🎵 EMBY
+  # 69
+  - DOMAIN-SUFFIX,69yun69.com,🎵 EMBY
+  # HuaLu
+  - DOMAIN-SUFFIX,zhyu.de,🎵 EMBY
+  # 云海
+  - DOMAIN-SUFFIX,oceancloud.asia,🎵 EMBY
+  # BCXC
+  - DOMAIN-SUFFIX,l0323.top,🎵 EMBY
+  # Cookie
+  - DOMAIN-SUFFIX,nas.edu.kg,直连
+  # Lily
+  - DOMAIN-SUFFIX,lilyemby.com,直连
+  # 小姨子
+  - DOMAIN-SUFFIX,emby.yun,直连
+  # 叶子
+  - DOMAIN-SUFFIX,yezi.my,🎵 EMBY
+  # Emos
+  - DOMAIN-SUFFIX,emos.best,直连
+  - DOMAIN-SUFFIX,tmdb.org,🎵 EMBY
+  # ETFLIX
+  - DOMAIN-SUFFIX,entertang.work,直连
+  # 云幕
+  - DOMAIN-SUFFIX,nubebelle.cn,🎵 EMBY
+  # 二刺螈
+  - DOMAIN-SUFFIX,nijigem.by,直连
+  # 狗剩
+  - DOMAIN-SUFFIX,mm880.xyz,🎵 EMBY
+  # 105°
+  - DOMAIN,ciallo.party,🎵 EMBY
+  # 鲨鱼
+  - DOMAIN-SUFFIX,525778.xyz,直连
+  # 吹大牛
+  - DOMAIN-SUFFIX,oboob.cn,直连
+  # 佬友记
+  - DOMAIN-SUFFIX,605305.xyz,🎵 EMBY
+  # HG EMBY
+  - DOMAIN-SUFFIX,dnscf.dpdns.org,直连
+  # 稳健服
+  - DOMAIN-SUFFIX,wenjian.de,🎵 EMBY
+  # 一之濑琴美
+  - DOMAIN-SUFFIX,ichinosekotomi.com,🎵 EMBY
+  # HKA
+  - DOMAIN-SUFFIX,aliz.work,🎵 EMBY
+  # Mirai
+  - DOMAIN-SUFFIX,miraiemby.com,直连
   - RULE-SET,private_ip,直连,no-resolve
   - RULE-SET,private_domain,直连
   - DOMAIN-SUFFIX,qichiyu.com,🚀 默认代理
@@ -148,13 +221,12 @@ rules:
   - RULE-SET,github_domain,👨🏿‍💻 GitHub
   - RULE-SET,youtube_domain,📹 YouTube
   - RULE-SET,google_domain,🍀 Google
-  - RULE-SET,onedrive_domain,🐬 OneDrive
   - RULE-SET,microsoft_domain,🪟 Microsoft
   - RULE-SET,apple_domain,直连
   - RULE-SET,tiktok_domain,🎵 TikTok
+  - RULE-SET,emby_domain,🎵 EMBY
   - RULE-SET,telegram_domain,📲 Telegram
   - RULE-SET,netflix_domain,🎥 NETFLIX
-  - RULE-SET,paypal_domain,💶 PayPal
   - RULE-SET,apple_ip,直连
   - RULE-SET,google_ip,🍀 Google
   - RULE-SET,netflix_ip,🎥 NETFLIX
@@ -180,12 +252,11 @@ rule-providers:
   github_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/github.mrs"}
   telegram_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.mrs"}
   netflix_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/netflix.mrs"}
-  paypal_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/paypal.mrs"}
-  onedrive_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/onedrive.mrs"}
   microsoft_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft.mrs"}
   apple_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple.mrs"}
   speedtest_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/ookla-speedtest.mrs"}
   tiktok_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/tiktok.mrs"}
+  emby_domain: { <<: *domain, url: "https://github.com/666OS/rules/raw/release/mihomo/domain/Emby.mrs"}
   geolocation-!cn: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.mrs"}
   cn_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs"}
   
