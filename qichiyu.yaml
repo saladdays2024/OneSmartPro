@@ -141,76 +141,27 @@ proxy-groups:
 
 # 规则匹配
 rules:
-  # Emby
-  # 反代（W佬）
+ # Emby直连列表
+  # 反代
   - DOMAIN-SUFFIX,hunao.cc.cd,直连
-  # SNTP
-  - DOMAIN-SUFFIX,cn2gias.uk,🎵 EMBY
-  # W佬
-  - DOMAIN-SUFFIX,kongcheng666.dpdns.org,🎵 EMBY
-  # nayovO
-  - DOMAIN-SUFFIX,007.us.kg,🎵 EMBY
-  # Shrek
-  - DOMAIN-SUFFIX,shrekmedia.org,🎵 EMBY
-  # Hohai
-  - DOMAIN-SUFFIX,hohai.eu.org,🎵 EMBY
-  # nyamedia
-  - DOMAIN-SUFFIX,bangumi.ca,🎵 EMBY
-  # 非越
-  - DOMAIN-SUFFIX,sfcj.org,🎵 EMBY
-  # 404 Not Found
-  - DOMAIN-SUFFIX,notfounda.shop,🎵 EMBY
-  # OkEmby
-  - DOMAIN-SUFFIX,okemby.org,🎵 EMBY
-  # 临小境
-  - DOMAIN-SUFFIX,liminalnet.com,🎵 EMBY
-  # 泥嚎
-  - DOMAIN-SUFFIX,istyboe.top,🎵 EMBY
-  # 肥牛
-  - DOMAIN-SUFFIX,feiniu.lol,🎵 EMBY
-  # 69
-  - DOMAIN-SUFFIX,69yun69.com,🎵 EMBY
-  # HuaLu
-  - DOMAIN-SUFFIX,zhyu.de,🎵 EMBY
-  # 云海
-  - DOMAIN-SUFFIX,oceancloud.asia,🎵 EMBY
-  # BCXC
-  - DOMAIN-SUFFIX,l0323.top,🎵 EMBY
   # Cookie
   - DOMAIN-SUFFIX,nas.edu.kg,直连
   # Lily
   - DOMAIN-SUFFIX,lilyemby.com,直连
   # 小姨子
   - DOMAIN-SUFFIX,emby.yun,直连
-  # 叶子
-  - DOMAIN-SUFFIX,yezi.my,🎵 EMBY
   # Emos
   - DOMAIN-SUFFIX,emos.best,直连
-  - DOMAIN-SUFFIX,tmdb.org,🎵 EMBY
   # ETFLIX
   - DOMAIN-SUFFIX,entertang.work,直连
-  # 云幕
-  - DOMAIN-SUFFIX,nubebelle.cn,🎵 EMBY
   # 二刺螈
   - DOMAIN-SUFFIX,nijigem.by,直连
-  # 狗剩
-  - DOMAIN-SUFFIX,mm880.xyz,🎵 EMBY
-  # 105°
-  - DOMAIN,ciallo.party,🎵 EMBY
   # 鲨鱼
   - DOMAIN-SUFFIX,525778.xyz,直连
   # 吹大牛
   - DOMAIN-SUFFIX,oboob.cn,直连
-  # 佬友记
-  - DOMAIN-SUFFIX,605305.xyz,🎵 EMBY
   # HG EMBY
   - DOMAIN-SUFFIX,dnscf.dpdns.org,直连
-  # 稳健服
-  - DOMAIN-SUFFIX,wenjian.de,🎵 EMBY
-  # 一之濑琴美
-  - DOMAIN-SUFFIX,ichinosekotomi.com,🎵 EMBY
-  # HKA
-  - DOMAIN-SUFFIX,aliz.work,🎵 EMBY
   # Mirai
   - DOMAIN-SUFFIX,miraiemby.com,直连
   - RULE-SET,private_ip,直连,no-resolve
@@ -256,7 +207,7 @@ rule-providers:
   apple_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple.mrs"}
   speedtest_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/ookla-speedtest.mrs"}
   tiktok_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/tiktok.mrs"}
-  emby_domain: { <<: *domain, url: "https://github.com/666OS/rules/raw/release/mihomo/domain/Emby.mrs"}
+  emby_domain: { <<: *class, url: "https://raw.githubusercontent.com/saladdays2024/OneSmartPro/refs/heads/main/emby.list"}
   geolocation-!cn: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.mrs"}
   cn_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs"}
   
