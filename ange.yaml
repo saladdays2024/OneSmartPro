@@ -341,7 +341,7 @@ rules:
   # W佬
   - DOMAIN-SUFFIX,kongcheng666.dpdns.org,所有-手动
   # 1111
-  - DOMAIN-SUFFIX,xmsl.org,所有-手动
+  - DOMAIN-SUFFIX,xmsl.org,直连
   # 非越
   - DOMAIN-SUFFIX,sfcj.org,所有-手动
   # 小虾米
