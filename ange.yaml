@@ -369,9 +369,9 @@ rules:
   # 叶子
   - DOMAIN-SUFFIX,yezi.my,直连
   # Hohai
-  - DOMAIN-SUFFIX,hohai.eu.org,所有-手动
+  - DOMAIN-SUFFIX,hohai.eu.org,直连
   # OkEmby
-  - DOMAIN-SUFFIX,okemby.org,所有-手动
+  - DOMAIN-SUFFIX,okemby.org,直连
   # Gousen
   - DOMAIN,gousen.cc.cd,所有-手动
   # KL Emby
