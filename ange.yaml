@@ -397,24 +397,27 @@ rules:
   # 肥牛
   - DOMAIN-SUFFIX,feiniu.lol,所有-手动
   # Eoos
-  - DOMAIN,eoos.lol,所有-手动
+  - DOMAIN,eoos.lol,直连
   # HelloHK
   - DOMAIN,hellohk.me,所有-手动
   # 105°
-  - DOMAIN,ciallo.party,所有-手动
+  - DOMAIN,ciallo.party,直连
   # HKA
   - DOMAIN-SUFFIX,aliz.work,所有-手动
   # Unbound
   - DOMAIN,faemby.vip,所有-手动
   # 佬友记
-  - DOMAIN-SUFFIX,605305.xyz,所有-手动  
+  - DOMAIN-SUFFIX,605305.xyz,直连
   # Emos
-  - DOMAIN-SUFFIX,emos.best,所有-手动
+  - DOMAIN-SUFFIX,emos.best,直连
   - DOMAIN-SUFFIX,tmdb.org,所有-手动
   # Cookie
   - DOMAIN-SUFFIX,nas.edu.kg,所有-手动
   # HG EMBY
   - DOMAIN-SUFFIX,dnscf.dpdns.org,所有-手动
+  # 翀のPorn
+  - DOMAIN-SUFFIX,cyclince.xyz,所有-手动
+  
 
   # 规则自带
   - RULE-SET,TEST / Domain,Test
