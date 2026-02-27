@@ -327,6 +327,10 @@ proxy-groups:
 # 规则引擎（rules）
 # ========================
 rules:
+# 自用规则
+# 自建节点
+  - DOMAIN,sublink.024888.xyz,所有-手动
+
 # Emby
   # 反代（Emby)
   - DOMAIN-SUFFIX,hunao.cc.cd,直连
