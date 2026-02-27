@@ -373,9 +373,9 @@ rules:
   # OkEmby
   - DOMAIN-SUFFIX,okemby.org,直连
   # Gousen
-  - DOMAIN,gousen.cc.cd,所有-手动
+  - DOMAIN,gousen.cc.cd,直连
   # KL Emby
-  - DOMAIN-SUFFIX,klplay.top,所有-手动
+  - DOMAIN-SUFFIX,klplay.top,直连
   # 临小境
   - DOMAIN-SUFFIX,liminalnet.com,所有-手动
   # Shrek
@@ -385,17 +385,17 @@ rules:
   # 二刺螈
   - DOMAIN-SUFFIX,nijigem.by,所有-手动
   # 404
-  - DOMAIN-SUFFIX,notfounda.shop,所有-手动
+  - DOMAIN-SUFFIX,notfounda.shop,直连
   # 小姨子
   - DOMAIN-SUFFIX,emby.yun,直连
   # nayovO
-  - DOMAIN-SUFFIX,007.us.kg,所有-手动
+  - DOMAIN-SUFFIX,007.us.kg,直连
   # 一之濑琴美
-  - DOMAIN-SUFFIX,ichinosekotomi.com,所有-手动
+  - DOMAIN-SUFFIX,ichinosekotomi.com,直连
   # HelloBlock
-  - DOMAIN-SUFFIX,doudou.pet,所有-手动
+  - DOMAIN-SUFFIX,doudou.pet,直连
   # 肥牛
-  - DOMAIN-SUFFIX,feiniu.lol,所有-手动  
+  - DOMAIN-SUFFIX,feiniu.lol,所有-手动
   # Eoos
   - DOMAIN,eoos.lol,所有-手动
   # HelloHK
