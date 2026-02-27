@@ -389,7 +389,7 @@ rules:
   # 404
   - DOMAIN-SUFFIX,notfounda.shop,所有-手动
   # 小姨子
-  - DOMAIN-SUFFIX,emby.yun,所有-手动
+  - DOMAIN-SUFFIX,emby.yun,直连
   # nayovO
   - DOMAIN-SUFFIX,007.us.kg,所有-手动
   # 一之濑琴美
