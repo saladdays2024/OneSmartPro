@@ -359,19 +359,17 @@ rules:
   # 泥嚎
   - DOMAIN-SUFFIX,istyboe.top,所有-手动  
   # 鲨鱼
-  - DOMAIN-SUFFIX,525778.xyz,所有-手动
+  - DOMAIN-SUFFIX,525778.xyz,直连
   # WE
-  - DOMAIN-SUFFIX,wedg.top,所有-手动
+  - DOMAIN-SUFFIX,wedg.top,直连
   # 吹大牛
   - DOMAIN-SUFFIX,meikanguo.com,直连
   # ETFLIX
-  - DOMAIN-SUFFIX,entertang.work,所有-手动
+  - DOMAIN-SUFFIX,etflix.lol,直连
   # 叶子
-  - DOMAIN-SUFFIX,yezi.my,所有-手动
+  - DOMAIN-SUFFIX,yezi.my,直连
   # Hohai
   - DOMAIN-SUFFIX,hohai.eu.org,所有-手动
-  # OkEmby
-  - DOMAIN-SUFFIX,okemby.org,所有-手动
   # OkEmby
   - DOMAIN-SUFFIX,okemby.org,所有-手动
   # Gousen
