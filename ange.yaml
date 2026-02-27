@@ -347,15 +347,15 @@ rules:
   # 1111
   - DOMAIN-SUFFIX,xmsl.org,直连
   # 非越
-  - DOMAIN-SUFFIX,sfcj.org,所有-手动
+  - DOMAIN-SUFFIX,sfcj.org,直连
   # 小虾米
-  - DOMAIN-SUFFIX,kingemby.xyz,所有-手动
+  - DOMAIN-SUFFIX,kingemby.xyz,直连
   # 稳健服
-  - DOMAIN-SUFFIX,wenjian.de,所有-手动
+  - DOMAIN-SUFFIX,wenjian.de,直连
   # Mirai
-  - DOMAIN-SUFFIX,miraiemby.com,所有-手动
+  - DOMAIN-SUFFIX,miraiemby.com,直连
   # 結束バンド
-  - DOMAIN-SUFFIX,biliblili.uk,所有-手动
+  - DOMAIN-SUFFIX,biliblili.uk,直连
   # 泥嚎
   - DOMAIN-SUFFIX,istyboe.top,所有-手动  
   # 鲨鱼
