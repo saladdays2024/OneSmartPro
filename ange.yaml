@@ -350,6 +350,8 @@ rules:
   - DOMAIN-SUFFIX,sfcj.org,直连
   # 小虾米
   - DOMAIN-SUFFIX,kingemby.xyz,直连
+  # Peach
+  - DOMAIN,embymv.link,直连
   # 稳健服
   - DOMAIN-SUFFIX,wenjian.de,直连
   # Mirai
