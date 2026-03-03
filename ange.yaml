@@ -354,7 +354,7 @@ rules:
   - DOMAIN,embymv.link,直连
   - IP-CIDR,193.123.232.141/32,直连
   # 稳健服
-  - DOMAIN-SUFFIX,wenjian.de,直连
+  - DOMAIN-SUFFIX,wenjian.de,所有-手动
   # Mirai
   - DOMAIN-SUFFIX,miraiemby.com,所有-手动
   # ROC
