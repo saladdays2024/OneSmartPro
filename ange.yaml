@@ -357,6 +357,8 @@ rules:
   - DOMAIN-SUFFIX,wenjian.de,直连
   # Mirai
   - DOMAIN-SUFFIX,miraiemby.com,所有-手动
+  # ROC
+  - DOMAIN-SUFFIX,rochub.xyz,所有-手动
   # 結束バンド
   - DOMAIN-SUFFIX,biliblili.uk,直连
   # 泥嚎
