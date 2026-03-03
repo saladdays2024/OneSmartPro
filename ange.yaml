@@ -359,7 +359,7 @@ rules:
   # ROC
   - DOMAIN-SUFFIX,rochub.xyz,所有-手动
   # 結束バンド
-  - DOMAIN-SUFFIX,biliblili.uk,直连
+  - DOMAIN-SUFFIX,biliblili.uk,所有-手动
   # 泥嚎
   - DOMAIN-SUFFIX,istyboe.top,所有-手动  
   # 鲨鱼
