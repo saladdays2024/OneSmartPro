@@ -332,8 +332,6 @@ rules:
   - DOMAIN,sublink.024888.xyz,所有-手动
 
 # Emby
-  # 反代（Emby)
-  - DOMAIN-SUFFIX,hunao.cc.cd,直连
   # Lily
   - DOMAIN-SUFFIX,lilyemby.com,直连
   # 69
@@ -373,7 +371,7 @@ rules:
   # OkEmby
   - DOMAIN-SUFFIX,okemby.org,所有-手动
   # Gousen
-  - DOMAIN,gousen.cc.cd,直连
+  - DOMAIN,gousen.cc.cd,所有-手动
   # KL Emby
   - DOMAIN-SUFFIX,klplay.top,直连
   # 临小境
@@ -389,9 +387,9 @@ rules:
   # 小姨子
   - DOMAIN-SUFFIX,emby.yun,直连
   # nayovO
-  - DOMAIN-SUFFIX,007.us.kg,直连
+  - DOMAIN-SUFFIX,007.us.kg,所有-手动
   # 一之濑琴美
-  - DOMAIN-SUFFIX,ichinosekotomi.com,直连
+  - DOMAIN-SUFFIX,ichinosekotomi.com,所有-手动
   # HelloBlock
   - DOMAIN-SUFFIX,doudou.pet,直连
   # 肥牛
