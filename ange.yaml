@@ -337,7 +337,7 @@ rules:
   # Lily
   - DOMAIN-SUFFIX,lilyemby.com,直连
   # 69
-  - DOMAIN-SUFFIX,69yun69.com,直连
+  - DOMAIN-SUFFIX,69yun69.com,所有-手动
   # 起点
   - DOMAIN-SUFFIX,28.al,所有-手动
   # SNTP
@@ -355,7 +355,7 @@ rules:
   # 稳健服
   - DOMAIN-SUFFIX,wenjian.de,直连
   # Mirai
-  - DOMAIN-SUFFIX,miraiemby.com,直连
+  - DOMAIN-SUFFIX,miraiemby.com,所有-手动
   # 結束バンド
   - DOMAIN-SUFFIX,biliblili.uk,直连
   # 泥嚎
