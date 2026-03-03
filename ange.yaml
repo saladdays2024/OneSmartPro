@@ -335,7 +335,7 @@ rules:
   # 反代（Emby)
   - DOMAIN-SUFFIX,hunao.cc.cd,直连
   # Lily
-  - DOMAIN-SUFFIX,lilyemby.com,所有-手动
+  - DOMAIN-SUFFIX,lilyemby.com,直连
   # 69
   - DOMAIN-SUFFIX,69yun69.com,直连
   # 起点
