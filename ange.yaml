@@ -365,7 +365,7 @@ rules:
   # 鲨鱼
   - DOMAIN-SUFFIX,525778.xyz,直连
   # WE
-  - DOMAIN-SUFFIX,wedg.top,直连
+  - DOMAIN-SUFFIX,wedg.top,所有-手动
   # 叶子
   - DOMAIN-SUFFIX,yezi.my,直连
   # Hohai
