@@ -367,7 +367,7 @@ rules:
   # WE
   - DOMAIN-SUFFIX,wedg.top,所有-手动
   # 叶子
-  - DOMAIN-SUFFIX,yezi.my,直连
+  - DOMAIN-SUFFIX,yezi.my,所有-手动
   # Hohai
   - DOMAIN-SUFFIX,hohai.eu.org,直连
   # OkEmby
