@@ -352,7 +352,7 @@ rules:
   - DOMAIN-SUFFIX,kingemby.xyz,直连
   # Peach
   - DOMAIN,embymv.link,直连
-  - IP-CIDR,193.123.232.141,直连
+  - IP-CIDR,193.123.232.141/32,直连
   # 稳健服
   - DOMAIN-SUFFIX,wenjian.de,直连
   # Mirai
