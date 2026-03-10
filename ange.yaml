@@ -341,7 +341,7 @@ rules:
   # SNTP
   - DOMAIN-SUFFIX,cn2gias.uk,所有-手动
   # W佬
-  - DOMAIN-SUFFIX,kongcheng666.dpdns.org,直连
+  - DOMAIN-SUFFIX,kongcheng666.dpdns.org,所有-手动
   # 1111
   - DOMAIN-SUFFIX,xmsl.org,直连
   # 非越
