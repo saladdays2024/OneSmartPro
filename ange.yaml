@@ -175,8 +175,8 @@ proxy-groups:
     interval: 300
     lazy: false
     proxies:
-      - 香港-手动
       - 香港-自动
+      - 香港-手动
   
   - name: 香港-手动
     type: select
@@ -196,8 +196,8 @@ proxy-groups:
     interval: 300
     lazy: false
     proxies:
-      - 台湾-手动
       - 台湾-自动
+      - 台湾-手动
   - name: 台湾-手动
     type: select
     include-all: true
@@ -215,8 +215,8 @@ proxy-groups:
     interval: 300
     lazy: false
     proxies:
-      - 日本-手动
       - 日本-自动
+      - 日本-手动
   - name: 日本-手动
     type: select
     include-all: true
@@ -234,8 +234,8 @@ proxy-groups:
     interval: 300
     lazy: false
     proxies:
-      - 新加坡-手动
       - 新加坡-自动
+      - 新加坡-手动
   - name: 新加坡-手动
     type: select
     include-all: true
@@ -253,8 +253,8 @@ proxy-groups:
     interval: 300
     lazy: false
     proxies:
-      - 韩国-手动
       - 韩国-自动
+      - 韩国-手动
   - name: 韩国-手动
     type: select
     include-all: true
@@ -272,8 +272,8 @@ proxy-groups:
     interval: 300
     lazy: false
     proxies:
-      - 美国-手动
       - 美国-自动
+      - 美国-手动
   - name: 美国-手动
     type: select
     include-all: true
@@ -291,8 +291,8 @@ proxy-groups:
     interval: 300
     lazy: false
     proxies:
-      - 英国-手动
       - 英国-自动
+      - 英国-手动
   - name: 英国-手动
     type: select
     include-all: true
