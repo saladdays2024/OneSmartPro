@@ -407,7 +407,7 @@ rules:
   # 佬友记
   - DOMAIN-SUFFIX,605305.xyz,直连
   # Emos
-  - DOMAIN-SUFFIX,emos.best,直连
+  - DOMAIN,yd.dirige.de5.net,直连
   - DOMAIN-SUFFIX,tmdb.org,所有-手动
   # Cookie
   - DOMAIN-SUFFIX,nas.edu.kg,所有-手动
