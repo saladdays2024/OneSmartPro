@@ -198,7 +198,7 @@ rules:
   # 叶子
   - DOMAIN-SUFFIX,yezi.my,Emby服
   # Emos
-  - DOMAIN-SUFFIX,emos.best,直接连接
+  - DOMAIN,yd.dirige.de5.net,直接连接
   - DOMAIN-SUFFIX,tmdb.org,Emby服
   # ETFLIX
   - DOMAIN-SUFFIX,entertang.work,直接连接
