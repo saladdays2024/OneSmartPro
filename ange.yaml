@@ -336,70 +336,82 @@ rules:
   - DOMAIN-SUFFIX,lilyemby.com,直连
   # 69
   - DOMAIN-SUFFIX,69yun69.com,所有-手动
+  # 西瓜
+  - DOMAIN-SUFFIX,yuntv.de,直连
   # 起点
   - DOMAIN-SUFFIX,28.al,所有-手动
+  # Youno
+  - DOMAIN-SUFFIX,younoyes.com,所有-手动 
   # SNTP
   - DOMAIN-SUFFIX,cn2gias.uk,所有-手动
+  # 临境 Liminal
+  - DOMAIN-SUFFIX,liminalnet.com,所有-手动
   # W佬
   - DOMAIN-SUFFIX,kongcheng666.dpdns.org,所有-手动
   # 1111
   - DOMAIN-SUFFIX,xmsl.org,直连
   # 非越
   - DOMAIN-SUFFIX,sfcj.org,所有-手动
-  # 小虾米
-  - DOMAIN-SUFFIX,kingemby.xyz,直连
+  # Kiku
+  - DOMAIN-SUFFIX,ucloudhost.top,所有-手动
   # Peach
   - DOMAIN,embymv.link,所有-手动
   # 稳健服
   - DOMAIN-SUFFIX,wenjian.de,所有-手动
   # Mirai
   - DOMAIN-SUFFIX,miraiemby.com,所有-手动
+  # 小虾米
+  - DOMAIN-SUFFIX,kingemby.xyz,所有-手动
   # ROC
   - DOMAIN-SUFFIX,rochub.xyz,所有-手动
   # 結束バンド
   - DOMAIN-SUFFIX,biliblili.uk,所有-手动
-  # 泥嚎
-  - DOMAIN-SUFFIX,istyboe.top,所有-手动  
+  # 飞了个喵
+  - DOMAIN-SUFFIX,meowfly.de,所有-手动
   # 鲨鱼
   - DOMAIN-SUFFIX,525778.xyz,直连
   # WE
-  - DOMAIN-SUFFIX,wedg.top,所有-手动
-  # 叶子
-  - DOMAIN-SUFFIX,yezi.my,所有-手动
+  - DOMAIN-SUFFIX,wedg.top,直连
+  # KL
+  - DOMAIN-SUFFIX,klplay.top,所有-手动
+  # 小姨子
+  - DOMAIN-SUFFIX,66990000.xyz,直连
   # Hohai
   - DOMAIN-SUFFIX,hohai.eu.org,所有-手动
+  # 叶子
+  - DOMAIN-SUFFIX,yezi.my,所有-手动
+  # Dec
+  - DOMAIN-SUFFIX,iemby.cn,直连
   # OkEmby
   - DOMAIN-SUFFIX,okemby.org,所有-手动
-  # Gousen
-  - DOMAIN,gousen.cc.cd,所有-手动
-  # KL Emby
-  - DOMAIN-SUFFIX,klplay.top,直连
-  # 临小境
-  - DOMAIN-SUFFIX,liminalnet.com,所有-手动
   # Shrek
   - DOMAIN-SUFFIX,shrekmedia.org,所有-手动
+  # 周三晚
+  - DOMAIN-SUFFIX,zhousanwan.xyz,所有-手动
   # nyamedia
   - DOMAIN-SUFFIX,bangumi.ca,所有-手动
   # 二刺螈
   - DOMAIN-SUFFIX,nijigem.by,所有-手动
   # 404
-  - DOMAIN-SUFFIX,notfounda.shop,直连
-  # 小姨子
-  - DOMAIN-SUFFIX,emby.yun,直连
-  # nayovO
-  - DOMAIN-SUFFIX,007.us.kg,所有-手动
+  - DOMAIN-SUFFIX,notfounda.shop,所有-手动
+  # HelloBlock
+  - DOMAIN-SUFFIX,doudou.pet,所有-手动
+  # Gousen
+  - DOMAIN,gousen.cc.cd,直连
   # 一之濑琴美
   - DOMAIN-SUFFIX,ichinosekotomi.com,所有-手动
-  # HelloBlock
-  - DOMAIN-SUFFIX,doudou.pet,直连
+  # nayovO
+  - DOMAIN-SUFFIX,007.us.kg,所有-手动
+  # 月之轩
+  - DOMAIN-SUFFIX,4348663.xyz,直连
   # 肥牛
   - DOMAIN-SUFFIX,feiniu.lol,所有-手动
-  # Eoos
-  - DOMAIN,eoos.lol,直连
   # HelloHK
-  - DOMAIN,hellohk.me,所有-手动
+  - DOMAIN,hellohk.me,直连
   # 105°
   - DOMAIN,ciallo.party,直连
+  # Eoos
+  - DOMAIN,eoos.lol,直连
   # HKA
   - DOMAIN-SUFFIX,aliz.work,所有-手动
   # Unbound
@@ -415,12 +427,8 @@ rules:
   - DOMAIN-SUFFIX,dnscf.dpdns.org,所有-手动
   # 翀のPorn
   - DOMAIN-SUFFIX,cyclince.xyz,所有-手动
-  # Dec
-  - DOMAIN-SUFFIX,iemby.cn,直连
-  # 月之轩
-  - DOMAIN-SUFFIX,4348663.xyz,直连
-  
-  
+  # EBS
+  - DOMAIN-SUFFIX,digimon.ink,直连
 
   # 规则自带
   - RULE-SET,TEST / Domain,Test
