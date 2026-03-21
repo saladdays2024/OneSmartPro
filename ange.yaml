@@ -405,7 +405,7 @@ rules:
   # Unbound
   - DOMAIN,faemby.vip,所有-手动
   # 佬友记
-  - DOMAIN-SUFFIX,605305.xyz,直连
+  - DOMAIN-SUFFIX,605305.xyz,所有-手动
   # Emos
   - DOMAIN,yd.dirige.de5.net,直连
   - DOMAIN-SUFFIX,tmdb.org,所有-手动
