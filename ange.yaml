@@ -330,7 +330,7 @@ rules:
 # 自用规则
 # 自建节点
   - DOMAIN,sublink.024888.xyz,所有-手动
-
+  - DOMAIN,hunao.cc.cd,直连
 # Emby
   # Lily
   - DOMAIN-SUFFIX,lilyemby.com,直连
