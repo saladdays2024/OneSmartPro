@@ -415,6 +415,8 @@ rules:
   - DOMAIN-SUFFIX,dnscf.dpdns.org,所有-手动
   # 翀のPorn
   - DOMAIN-SUFFIX,cyclince.xyz,所有-手动
+  # Dec
+  - DOMAIN-SUFFIX,iemby.cn, 直连
   
 
   # 规则自带
