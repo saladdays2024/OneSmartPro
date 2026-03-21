@@ -417,6 +417,9 @@ rules:
   - DOMAIN-SUFFIX,cyclince.xyz,所有-手动
   # Dec
   - DOMAIN-SUFFIX,iemby.cn,直连
+  # 月之轩
+  - DOMAIN-SUFFIX,4348663.xyz,直连
+  
   
 
   # 规则自带
