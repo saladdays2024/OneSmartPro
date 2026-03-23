@@ -381,7 +381,7 @@ rules:
   # 叶子
   - DOMAIN-SUFFIX,yezi.my,所有-手动
   # Dec
-  - DOMAIN-SUFFIX,iemby.cn,直连
+  - DOMAIN-SUFFIX,iemby.cn,所有-手动
   # OkEmby
   - DOMAIN-SUFFIX,okemby.org,所有-手动
   # Shrek
