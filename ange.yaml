@@ -332,6 +332,8 @@ rules:
   - DOMAIN,sublink.024888.xyz,所有-手动
   - DOMAIN,hunao.cc.cd,直连
   - DOMAIN,saladdays.cc.cd,直连
+  - IP-CIDR,172.20.0.0/16,直连
+
 # Emby
   # Lily
   - DOMAIN-SUFFIX,lilyemby.com,直连
