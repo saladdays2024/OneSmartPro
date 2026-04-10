@@ -9,7 +9,7 @@ proxy-providers:
   优质服务商:
     url: "http://192.168.5.100:3001/CKg2abstVnOeRpm1aB4G/download/collection/%E4%BC%98%E8%B4%A8%E8%AE%A2%E9%98%85"  
     type: http
-    interval: 86400
+    interval: 864000
     health-check:
       enable: true
       url: https://www.gstatic.com/generate_204
@@ -19,7 +19,7 @@ proxy-providers:
   备用服务商:
     url: "http://192.168.5.100:3001/CKg2abstVnOeRpm1aB4G/download/collection/%E5%A4%87%E7%94%A8%E8%AE%A2%E9%98%85"  
     type: http
-    interval: 86400
+    interval: 864000
     health-check:
       enable: true
       url: https://www.gstatic.com/generate_204
@@ -29,7 +29,7 @@ proxy-providers:
   自建服务商:
     url: "http://192.168.5.100:3001/CKg2abstVnOeRpm1aB4G/download/My"  
     type: http
-    interval: 86400
+    interval: 864000
     health-check:
       enable: true
       url: https://www.gstatic.com/generate_204
