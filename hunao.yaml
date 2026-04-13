@@ -142,6 +142,9 @@ proxy-groups:
   # ── 游戏 ─────────────────────────────────
   - {name: 🎮 Steam, <<: *default}
   - {name: 🎮 Games, <<: *default}
+  # ── EMBY ─────────────────────────────────
+  - {name: Emby代理, <<: *default}
+  - {name: Emby直连, <<: *default}  
 
   # ── 金融 ─────────────────────────────────
   - {name: 💰 Crypto, <<: *default}
@@ -230,57 +233,6 @@ rules:
   # ── 自用节点直连 ──────────────────────────
   - DOMAIN,sublink.024888.xyz,🌐 所有-手动
 
-  # ── Emby 服务器 ───────────────────────────
-  - DOMAIN-SUFFIX,lilyemby.com,🌐 所有-手动       # Lily
-  - DOMAIN-SUFFIX,69yun69.com,🌐 所有-手动        # 69
-  - DOMAIN-SUFFIX,yuntv.de,直连                   # 西瓜
-  - DOMAIN-SUFFIX,28.al,🌐 所有-手动              # 起点
-  - DOMAIN-SUFFIX,younoyes.com,🌐 所有-手动        # Youno
-  - DOMAIN-SUFFIX,cn2gias.uk,🌐 所有-手动         # SNTP
-  - DOMAIN-SUFFIX,liminalnet.com,🌐 所有-手动      # 临境 Liminal
-  - DOMAIN-SUFFIX,kongcheng666.dpdns.org,🌐 所有-手动  # W佬
-  - DOMAIN-SUFFIX,xmsl.org,🌐 所有-手动           # 1111
-  - DOMAIN-SUFFIX,sfcj.org,🌐 所有-手动           # 非越
-  - DOMAIN-SUFFIX,ucloudhost.top,🌐 所有-手动     # Kiku
-  - DOMAIN,embymv.link,🌐 所有-手动               # Peach
-  - DOMAIN-SUFFIX,wenjian.de,🌐 所有-手动         # 稳健服
-  - DOMAIN-SUFFIX,miraiemby.com,🌐 所有-手动      # Mirai
-  - DOMAIN-SUFFIX,kingemby.xyz,🌐 所有-手动       # 小虾米
-  - DOMAIN-SUFFIX,rochub.xyz,🌐 所有-手动         # ROC
-  - DOMAIN-SUFFIX,biliblili.uk,🌐 所有-手动       # 結束バンド
-  - DOMAIN-SUFFIX,meowfly.de,🌐 所有-手动         # 飞了个喵
-  - DOMAIN-SUFFIX,525778.xyz,直连                 # 鲨鱼
-  - DOMAIN-SUFFIX,wedg.top,直连                   # WE
-  - DOMAIN-SUFFIX,klplay.top,🌐 所有-手动         # KL
-  - DOMAIN-SUFFIX,66990000.xyz,直连               # 小姨子
-  - DOMAIN-SUFFIX,hohai.eu.org,🌐 所有-手动       # Hohai
-  - DOMAIN-SUFFIX,yezi.my,🌐 所有-手动            # 叶子
-  - DOMAIN-SUFFIX,iemby.cn,🌐 所有-手动           # Dec
-  - DOMAIN-SUFFIX,okemby.org,🌐 所有-手动         # OkEmby
-  - DOMAIN-SUFFIX,shrekmedia.org,🌐 所有-手动     # Shrek
-  - DOMAIN-SUFFIX,zhousanwan.xyz,🌐 所有-手动     # 周三晚
-  - DOMAIN-SUFFIX,bangumi.ca,🌐 所有-手动         # nyamedia
-  - DOMAIN-SUFFIX,nijigem.by,🌐 所有-手动         # 二刺螈
-  - DOMAIN-SUFFIX,notfounda.shop,🌐 所有-手动     # 404
-  - DOMAIN-SUFFIX,doudou.pet,🌐 所有-手动         # HelloBlock
-  - DOMAIN,gousen.cc.cd,直连                      # Gousen
-  - DOMAIN-SUFFIX,ichinosekotomi.com,🌐 所有-手动  # 一之濑琴美
-  - DOMAIN-SUFFIX,007.us.kg,🌐 所有-手动          # nayovO
-  - DOMAIN-SUFFIX,4348663.xyz,直连                # 月之轩
-  - DOMAIN-SUFFIX,feiniu.lol,🌐 所有-手动         # 肥牛
-  - DOMAIN,hellohk.me,直连                        # HelloHK
-  - DOMAIN,ciallo.party,直连                      # 105°
-  - DOMAIN,eoos.lol,直连                          # Eoos
-  - DOMAIN-SUFFIX,aliz.work,🌐 所有-手动          # HKA
-  - DOMAIN,faemby.vip,🌐 所有-手动                # Unbound
-  - DOMAIN-SUFFIX,605305.xyz,🌐 所有-手动         # 佬友记
-  - DOMAIN,yd.dirige.de5.net,直连                 # Emos
-  - DOMAIN-SUFFIX,tmdb.org,🌐 所有-手动
-  - DOMAIN-SUFFIX,nas.edu.kg,🌐 所有-手动         # Cookie
-  - DOMAIN-SUFFIX,dnscf.dpdns.org,🌐 所有-手动   # HG EMBY
-  - DOMAIN-SUFFIX,cyclince.xyz,🌐 所有-手动       # 翀のPorn
-  - DOMAIN-SUFFIX,digimon.ink,直连                # EBS
-
   # ── 规则集匹配 ────────────────────────────
   - RULE-SET,TEST / Domain,🧪 Test
   - RULE-SET,Block / Domain,🚫 Block
@@ -337,6 +289,9 @@ rules:
   - RULE-SET,UBI / Domain,🎮 Games
   - RULE-SET,PlayStation / Domain,🎮 Games
   - RULE-SET,Nintend / Domain,🎮 Games
+  # EMBY
+  - RULE-SET,Emby代理 / Domain,Emby代理
+  - RULE-SET,Emby直连 / Domain,Emby直连
 
   # 搜索
   - RULE-SET,Google / Domain,🔍 Google
@@ -421,7 +376,12 @@ rule-providers:
   UBI / Domain:         {<<: *class,  url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/UBI/UBI.list"}
   PlayStation / Domain: {<<: *class,  url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/PlayStation/PlayStation.list"}
   Nintend / Domain:     {<<: *class,  url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Nintendo/Nintendo.list"}
-
+  
+  # EMBY代理服
+  Emby代理 / Domain:        {<<: *class,  url: "https://gh-proxy.org/https://raw.githubusercontent.com/saladdays2024/OneSmartPro/refs/heads/main/emby.list"}
+  # EMBY直连服
+  Emby直连 / Domain:        {<<: *class,  url: "https://gh-proxy.org/https://raw.githubusercontent.com/saladdays2024/OneSmartPro/refs/heads/main/embydirect.list"}
+  
   # 国外兜底 / 国内直连
   Proxy / Domain:   {<<: *class,  url: "https://gh-proxy.com/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/Proxy.list"}
   Globe / Domain:   {<<: *class,  url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Global/Global.list"}
