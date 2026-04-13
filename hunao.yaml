@@ -143,8 +143,8 @@ proxy-groups:
   - {name: 🎮 Steam, <<: *default}
   - {name: 🎮 Games, <<: *default}
   # ── EMBY ─────────────────────────────────
-  - {name: Emby代理, <<: *default}
-  - {name: Emby直连, <<: *default}  
+  - {name: 📽️ Emby代理, <<: *default}
+  - {name: 📽️ Emby直连, <<: *default}  
 
   # ── 金融 ─────────────────────────────────
   - {name: 💰 Crypto, <<: *default}
@@ -290,8 +290,8 @@ rules:
   - RULE-SET,PlayStation / Domain,🎮 Games
   - RULE-SET,Nintend / Domain,🎮 Games
   # EMBY
-  - RULE-SET,Emby代理 / Domain,Emby代理
-  - RULE-SET,Emby直连 / Domain,Emby直连
+  - RULE-SET,Emby代理 / Domain,📽️ Emby代理
+  - RULE-SET,Emby直连 / Domain,📽️ Emby直连
 
   # 搜索
   - RULE-SET,Google / Domain,🔍 Google
