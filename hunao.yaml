@@ -212,7 +212,7 @@ proxy-groups:
 # ========================
 rules:
   # ── 自用节点直连 ──────────────────────────
-  - DOMAIN,sublink.024888.xyz,🌐 所有-手动
+  - DOMAIN,sublink.024888.xyz,直连
 
   # ── 规则集匹配 ────────────────────────────
   - RULE-SET,TEST / Domain,🧪 Test
