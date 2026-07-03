@@ -194,7 +194,7 @@ proxy-groups:
     interval: 600
     filter: "(?=.*(广新|新加坡|SG|坡|狮城|🇸🇬|Singapore)).*$"
     
- - name: 🇰🇷 韩国-自动
+  - name: 🇰🇷 韩国-自动
     type: url-test
     include-all: true
     tolerance: 50
