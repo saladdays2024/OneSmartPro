@@ -147,7 +147,7 @@ proxy-groups:
   - {name: 💰 Crypto, <<: *default}
 
   # ── 通用 / 兜底 ──────────────────────────
-  - {name: 🧪 Test,  <<: *default}
+  - {name: 🧪 测速/检测,  <<: *default}
   - {name: 🌏 国外,  <<: *default}
   - {name: 🇨🇳 国内,  <<: *default}
   - {name: 🔀 其他,  <<: *default}
@@ -223,7 +223,7 @@ rules:
   - DOMAIN,sublink.024888.xyz,直连
 
   # ── 规则集匹配 ────────────────────────────
-  - RULE-SET,TEST / Domain,🧪 Test
+  - RULE-SET,TEST / Domain,🧪 测速/检测
 
   # AI 服务
   - RULE-SET,ChatGPT / Domain,💡 AI
@@ -305,7 +305,7 @@ rule-anchor:
   class:  &class  {type: http, interval: 86400, behavior: classical, format: text}
 
 rule-providers:
-  # 测试 / 拦截
+  # 测速 / 检测
   TEST / Domain:  {<<: *class,  url: "https://gh-proxy.com/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/Check.list"}
 
   # AI 服务
