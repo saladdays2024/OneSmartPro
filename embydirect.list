@@ -6,8 +6,6 @@ IP-CIDR,209.33.172.84/32
 IP-CIDR,185.148.13.13/32
 DOMAIN-SUFFIX,loseremby.org
 DOMAIN-SUFFIX,taotu.ink
-DOMAIN-SUFFIX,lunarisvault.com
-DOMAIN-SUFFIX,278612356.xyz
 DOMAIN-SUFFIX,115.com
 DOMAIN-SUFFIX,shayuemby.top
 DOMAIN-SUFFIX,aytplus.top
@@ -16,7 +14,6 @@ DOMAIN-SUFFIX,entertang.work
 DOMAIN-SUFFIX,saodu6.top
 DOMAIN-SUFFIX,jiedaibao.gs
 DOMAIN-SUFFIX,longemby.com
-DOMAIN-SUFFIX,emby.my
 DOMAIN-SUFFIX,longemby.top
 DOMAIN-SUFFIX,emby.pro
 DOMAIN-SUFFIX,aurx.top
@@ -24,3 +21,4 @@ DOMAIN,ys.bydsb.cc.cd
 DOMAIN-SUFFIX,cnmbyd.xyz
 DOMAIN,ys.fw1.de5.net
 DOMAIN,ys.sbcnm.us.ci
+DOMAIN-SUFFIX,emby.my
