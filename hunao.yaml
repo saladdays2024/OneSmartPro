@@ -162,6 +162,9 @@ proxy-groups:
 
 # 规则路由
 rules:
+  # 路由本机 iStoreEnhance 直连（避免 Cloudflare IP 优选打崩节点）
+  - PROCESS-NAME,iStoreEnhance,DIRECT
+  
   # 广告拦截
   - RULE-SET,Tracking,广告拦截
   - RULE-SET,Advertising,广告拦截
