@@ -13,6 +13,19 @@
 # 请在 proxy-providers 中添加您的订阅链接，或在 proxies 中添加自定义节点
 
 
+# ============================================================
+# 修正版 2026-10-30 —— 相对原文件仅改动下列 5 处
+# 1. log-level: silent -> warning        出问题时有日志可查
+# 2. geo-auto-update: true -> false      内核自更新走 fake-ip 会被自己的规则劫持，
+#                                        常年 EOF；OpenClash 每天 03:00 有独立更新
+# 3. sniffer.enable: true -> false       并删除 QUIC 段（QUIC 已被防火墙拦截，嗅探纯空转）
+# 4. 新增 GEOIP,CN,DIRECT                原配置漏网的国内 IP 会走代理
+# 5. keep-alive-interval: 15 -> 30       降低高并发时的 keepalive 包量
+# ------------------------------------------------------------
+# 注意：OpenClash 运行时会覆盖 allow-lan / log-level /
+#       external-controller / secret / sniffer，这几项在文件里改无效
+# ============================================================
+
 # 锚点配置
 x-base-provider: &base-provider {type: http, interval: 86400, etag-support: true, health-check: {enable: true, url: 'https://www.gstatic.com/generate_204', interval: 300}, filter: '^(?!.*(群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|公告|续费|重置|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author))'}
 
@@ -62,10 +75,10 @@ ipv6: false
 allow-lan: false
 unified-delay: true
 tcp-concurrent: true
-log-level: silent
+log-level: warning
 bind-address: '*'
 find-process-mode: 'off'
-keep-alive-interval: 15
+keep-alive-interval: 30
 keep-alive-idle: 600
 authentication: [mihomo:yyds666]
 skip-auth-prefixes: [127.0.0.1/8, '::1/128']
@@ -78,17 +91,17 @@ external-ui: ui
 external-controller: 127.0.0.1:9090
 secret: yyds666
 profile: {store-selected: true, store-fake-ip: true}
-geo-auto-update: true
+# 内核自更新已关闭：下载走 fake-ip 会被自己的规则劫持，常年 EOF
+geo-auto-update: false
 geo-update-interval: 24
 geox-url: {mmdb: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.metadb", geoip: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat", geosite: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat"}
 
 # 流量嗅探
 sniffer:
-  enable: true
+  enable: false
   sniff:
     HTTP:  {ports: [80, 8080-8880], override-destination: true}
     TLS:   {ports: [443, 8443]}
-    QUIC:  {ports: [443, 8443]}
   skip-domain: ["Mijia Cloud", "+.push.apple.com"]
 
 # TUN模式
@@ -228,6 +241,9 @@ rules:
   - RULE-SET,ChinaIP,国内流量,no-resolve
 
   # 兜底规则
+  # 国内 IP 兜底：ChinaIP 规则集没覆盖到的国内地址不走代理
+  - GEOIP,CN,DIRECT
+
   - MATCH,漏网之鱼
 
 # 规则集提供者
