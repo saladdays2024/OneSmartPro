@@ -195,6 +195,11 @@ rules:
   # 国际媒体
   - RULE-SET,Emby(代理),EMBY(代理)
   - RULE-SET,Emby(直连),EMBY(直连)
+  - RULE-SET,YouTube,国际媒体              
+  - RULE-SET,Netflix,国际媒体              
+  - RULE-SET,Spotify,国际媒体              
+  - RULE-SET,Disney,国际媒体               
+  - RULE-SET,NetflixIP,国际媒体,no-resolve 
   - RULE-SET,Streaming,国际媒体
   - RULE-SET,StreamingIP,国际媒体,no-resolve
 
