@@ -94,7 +94,24 @@ dns:
   fake-ip-range: 198.18.0.1/16
   default-nameserver: [119.29.29.29, 180.184.1.1, 223.5.5.5]
   nameserver: [https://dns.alidns.com/dns-query, https://doh.pub/dns-query]
-  fake-ip-filter: ["+.lan", "*.local", "+.gstatic.com", "+.miwifi.com", "+.market.xiaomi.com", "+.push.apple.com"]
+  fake-ip-filter:
+  # 局域网 / 设备发现
+  - "+.lan"
+  - "*.local"
+  # 系统连通性检测
+  - "+.gstatic.com"           # 安卓 / Chrome
+  - "+.msftconnecttest.com"   # Windows
+  - "+.msftncsi.com"          # Windows
+  - "+.captive.apple.com"     # 苹果
+  # 系统服务 —— 走假 IP 会异常或失真
+  - "+.push.apple.com"        # 苹果推送
+  - "+.ntp.org"               # 校时
+  - "time.windows.com"        # 校时
+  - "time.apple.com"          # 校时
+  - "+.stun.l.google.com"     # 语音/视频通话的 NAT 探测
+  # 自家设备
+  - "+.miwifi.com"
+  - "+.market.xiaomi.com"
 
 # 代理策略组
 proxy-groups:
