@@ -29,8 +29,7 @@ x-rule-set-classical-text: &rule-set-classical-text { type: http, behavior: clas
 
 proxy-providers:
   Primary: {<<: *base-provider, url: 'http://192.168.5.100:3001/CKg2abstVnOeRpm1aB4G/download/collection/%E4%BC%98%E8%B4%A8%E8%AE%A2%E9%98%85', override: {additional-prefix: '[P] '}}
-  Backup:  {<<: *base-provider, url: 'http://192.168.5.100:3001/CKg2abstVnOeRpm1aB4G/download/collection/%E5%A4%87%E7%94%A8%E8%AE%A2%E9%98%85', override: {additional-prefix: '[B] '}}
-  Other:   {<<: *base-provider, url: 'http://192.168.5.100:3001/CKg2abstVnOeRpm1aB4G/download/My', override: {additional-prefix: '[O] '}}
+  Backup:  {<<: *base-provider, url: 'http://192.168.5.100:3001/CKg2abstVnOeRpm1aB4G/download/My', override: {additional-prefix: '[B] '}}
 
 # 自定义代理节点
 proxies:
